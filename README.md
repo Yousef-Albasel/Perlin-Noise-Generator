@@ -18,5 +18,5 @@ def drawGrid():
             for y in range(0, SCREEN_HEIGHT, blockSize):
                 rect = pygame.Rect(x, y, blockSize, blockSize)
                 pygame.draw.rect(screen, "white", rect, 1)
-				```
+```
 ![image](https://github.com/Yousef-Albasel/Perlin-Noise-Generator/assets/111648493/be89124b-3d1b-4695-8fd9-cb75ccf11885)
