@@ -13,11 +13,13 @@ i'll be using this [github repo](https://rtouti.github.io/graphics/perlin-noise-
 
 First i called **Numpy** and **Matplot** library, for both math and visualization.
 
+```py
 def PerlinNoise(x,y,seed):
     # Creating Permutations table of 512 number so it can wrap up
     permutations = list(range(256))
     shuffle(permutations,seed)
     permutations = np.stack([permutations, permutations]).flatten()
+```
 > The algorithm takes as input a certain number of floating point parameters (depending on the dimension) and return a value in a certain range (for Perlin noise, that range is generally said to be between -1.0 and +1.0 but it’s actually a bit different). Let’s say it is in 2 dimensions, so it takes 2 parameters: x and y. Now, x and y can be anything but they are generally a position. To generate a texture, x and y would be the coordinates of the pixels in the texture (multiplied by a small number called the frequency but we will see that at the end). So for texture generation, we would loop through every pixel in the texture, calling the Perlin noise function for each one and decide, based on the return value, what color that pixel would be.
   
     # Getting Grid Coordintaes 
