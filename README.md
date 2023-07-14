@@ -33,6 +33,8 @@ def Fade(t):
  xFaded, yFaded = Fade(xFract), Fade(yFract)
 ```
 Now this can get a little bit tricky, assume this is our grid:
+
+
 ![image](https://github.com/Yousef-Albasel/Perlin-Noise-Generator/assets/111648493/3f3e789b-8814-497b-907a-3c845cb07181)
 
 Each corner has 4 adjacent cells around it, assume we are now dealing with the point (x,y) , we need to find the closest grid point to it, which is (1,1)
